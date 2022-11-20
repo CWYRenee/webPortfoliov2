@@ -1,0 +1,63 @@
+body {
+  height: 100vh;
+  background-image:    url('./assets/webPort.gif');
+  background-size:     cover;                      
+  background-repeat:   no-repeat;
+  background-position: center;
+}
+
+.overlay {
+  --parentHeight: 100vh;
+  height: var(--parentHeight);
+  --parentWidth: 100%;
+  width: var(--parentWidth);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+
+#github {
+  position: absolute;
+  /* background-color: red; */
+  top: 20%;
+  left: 21%;
+  height: 30%;
+  width: calc(var(--parentWidth) * 0.30);
+  opacity: 1;
+  z-index: 2;
+}
+
+#resume {
+  position: absolute;
+  /* background-color: green; */
+  top: 18%;
+  right: 9%;
+  height: 26%;
+  width: calc(var(--parentWidth) * 0.12);
+  opacity: 1;
+  z-index: 2;
+}
+
+#pictures {
+  cursor: pointer;
+  position: absolute;
+  /* background-color: blue; */
+  top: 0%;
+  left: 0%;
+  height: 35%;
+  width: calc(var(--parentWidth) * 0.35);
+  opacity: 1;
+  z-index: 1;
+}
+
+#me {
+  position: absolute;
+  /* background-color: white; */
+  bottom: 0%;
+  left: 35%;
+  height: 50%;
+  width: calc(var(--parentWidth) * 0.28);
+  opacity: 1;
+  z-index: 1;
+}
